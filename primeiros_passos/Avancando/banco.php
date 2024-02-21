@@ -10,17 +10,10 @@ function sacar($conta, $valorASacar)
     return $conta;
 }
 
-function OlaMundo ($olamundo)
-{
-    echo "Olá Mundo" . PHP_EOL;
-}
-
 function exibeMensagem ($mensagem) 
 {
     echo $mensagem . PHP_EOL;
 }
-
-
 
 $contasCorrentes = [
     '123.456.789-10' => [
