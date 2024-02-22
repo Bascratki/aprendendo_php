@@ -42,12 +42,12 @@ nomeMaiusculo ($contasCorrentes['123.256.789-12']);
     <dl>
         <?php foreach ($contasCorrentes as $cpf => $conta) { ?>
         <dt>
-            <h3><?php echo $conta['titular']; ?> - <?php echo $cpf; ?></h3>
+            <h3><?= $conta['titular']; ?> - <?= $cpf; ?></h3>
         </dt>
         <dd>
-            Saldo: <?php echo $conta['saldo']; ?>
+            Saldo: <?= $conta['saldo']; ?>
         </dd>
         <?php } ?>
-    </dt>
+    </dl>
 </body>
 </html>
