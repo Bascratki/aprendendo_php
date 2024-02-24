@@ -17,19 +17,19 @@ $notasBimestre2 = [
 ];
 
 // Identificando alunos presentes no primeiro bimestre, mas ausentes no segundo
-$alunosFaltantes = array_diff_key($notasBimestre1, $notasBimestre2);
+$alunosFaltantes = array_diff_key ($notasBimestre1, $notasBimestre2);
 
 // Obtendo os nomes dos alunos faltantes
-$nomesAlunos = array_keys($alunosFaltantes);
+$nomesAlunos = array_keys ($alunosFaltantes);
 
 // Obtendo as notas dos alunos faltantes
-$notasAlunos = array_values($alunosFaltantes);
+$notasAlunos = array_values ($alunosFaltantes);
 
 // Combinando as notas com os nomes dos alunos (inverte a associação usual de nome => nota)
-print_r(array_combine($notasAlunos, $nomesAlunos));
+print_r (array_combine ($notasAlunos, $nomesAlunos));
 
 // Invertendo o array de alunos faltantes para ter as notas como chaves e os nomes como valores
-print_r(array_flip($alunosFaltantes));
+print_r (array_flip ($alunosFaltantes));
 
 /*
 

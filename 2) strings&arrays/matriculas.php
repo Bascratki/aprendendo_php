@@ -21,8 +21,8 @@ $alunos2022 [] =  'Gustavo';
 array_push ($alunos2022, 'Lucas', 'Iago');
 array_unshift ($alunos2022, 'Daniel');
 
-echo (array_push($alunos2022)) . PHP_EOL;
-echo (array_shift($alunos2022)) . PHP_EOL;
-echo (array_pop($alunos2022)) . PHP_EOL;
+echo (array_push ($alunos2022)) . PHP_EOL;
+echo (array_shift ($alunos2022)) . PHP_EOL;
+echo (array_pop( $alunos2022)) . PHP_EOL;
 
 print_r ($alunos2022);

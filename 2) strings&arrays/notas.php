@@ -10,13 +10,13 @@ $notas = [
 ];
 
 // Ordenando o array pelo nome do aluno em ordem decrescente
-krsort($notas);
+krsort ($notas);
 
 // Exibindo o array após a ordenação
-var_dump($notas);
+var_dump ($notas);
 
 // Verificando se $notas é um array
-if (is_array($notas)) {
+if (is_array ($notas)) {
     echo "Sim, é um array" . PHP_EOL; //Imprime "Sim, é um array"
 }
 

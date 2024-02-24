@@ -8,7 +8,8 @@ $array = [
 ];
 
 // Itera sobre cada elemento do array
-foreach ($array as $id => $numeral) {
+foreach ($array as $id => $numeral) 
+{
     // Imprime a chave (número) e seu valor correspondente (numeral em inglês)
     echo "$id em inglês é $numeral" . PHP_EOL;
 }

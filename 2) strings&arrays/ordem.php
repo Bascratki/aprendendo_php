@@ -29,15 +29,16 @@ $notas = [
 ];
 
 // Definindo uma função para comparar as notas
-function ordenaNotas(array $nota1, array $nota2): int {
+function ordenaNotas (array $nota1, array $nota2): int
+{
     return $nota2['nota'] <=> $nota1['nota'];
 }
 
 // Ordenando o array $notas usando a função de comparação
-usort($notas, 'ordenaNotas');
+usort ($notas, 'ordenaNotas');
 
 // Exibindo o array após a ordenação
-var_dump($notas);
+var_dump ($notas);
 
 /*
 
