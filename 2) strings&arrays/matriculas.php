@@ -15,10 +15,14 @@ $novosAlunos = [
     8 => 'Daiane',
 ];
 
-$alunos2022_1 = array_merge($alunos2021, $novosAlunos);
-$alunos2022_2 = $alunos2021 + $novosAlunos;
-$alunos2022_3 = [...$alunos2021, 'LUCAS', ...$novosAlunos];
+$alunos2022 = [...$alunos2021, 'Lucas', ...$novosAlunos];
+$alunos2022 [] =  'Gustavo';
 
-print_r($alunos2022_1);
-print_r($alunos2022_2);
-print_r($alunos2022_3);
+array_push ($alunos2022, 'Lucas', 'Iago');
+array_unshift ($alunos2022, 'Daniel');
+
+echo (array_push($alunos2022)) . PHP_EOL;
+echo (array_shift($alunos2022)) . PHP_EOL;
+echo (array_pop($alunos2022)) . PHP_EOL;
+
+print_r ($alunos2022);
