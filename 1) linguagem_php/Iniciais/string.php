@@ -1,9 +1,9 @@
 <?php
 
 // Define as variáveis.
-$nome = "Lucas Stopinski da Silva"; // Define o nome.
-$idade = 18; // Define a idade.
-$email = "lucasstopinskidasilva@gmail.com"; // Define o e-mail.
+$nome = "Lucas Stopinski da Silva";
+$idade = 18;
+$email = "lucasstopinskidasilva@gmail.com";
 
 // Exibe as informações.
 echo "Olá Mundo!" . PHP_EOL; // Exibe a mensagem inicial.

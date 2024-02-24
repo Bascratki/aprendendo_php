@@ -6,16 +6,20 @@ $substracao = 2 - 2; // Subtração.
 $multiplicacao = 2 * 2; // Multiplicação.
 $divisao = 2 / 2; // Divisão.
 $potencia = 2 ** 2; // Potência.
-$restodivisao = 10 % 3; // Resto da divisão.
+$restodivisao1 = 10 % 3; // Resto da divisão.
 $restodivisao2 = 10 % 2; // Resto da divisão.
 
 // Exibe os resultados.
-echo $soma . "\n"; // Exibe a soma.
-echo $substracao . "\n"; // Exibe a subtração.
-echo $multiplicacao . "\n"; // Exibe a multiplicação.
-echo $divisao . "\n"; // Exibe a divisão.
-echo $potencia . "\n"; // Exibe a potência.
-echo $restodivisao; // Exibe o resto da divisão.
+echo "Operações matemáticas" . "\n"; //Exibe o título.
+echo "Soma: $soma" . "\n"; // Exibe a soma.
+echo "Subtração: $substracao" . "\n"; // Exibe a subtração.
+echo "Multiplicação: $multiplicacao" . "\n"; // Exibe a multiplicação.
+echo "Divisão: $divisao" . "\n"; // Exibe a divisão.
+echo "Potência: $potencia" . "\n"; // Exibe a potência.
+echo "Divisão1: $restodivisao1" . "\n"; // Exibe o resto da divisão.
+echo "Divisão2: $restodivisao2" . "\n"; // Exibe o resto da divisão.
+
+echo PHP_EOL;
 
 // Operações de comparação.
 $igual = 2 == 2; // Igualdade.
@@ -26,12 +30,15 @@ $maiorigual = 2 >= 2; // Maior ou igual a.
 $menorigual = 2 <= 2; // Menor ou igual a.
 
 // Exibe os resultados.
-echo $igual . "\n"; // Exibe a igualdade.
-echo $diferente . "\n"; // Exibe a diferença.
-echo $maior . "\n"; // Exibe a comparação "maior que".
-echo $menor . "\n"; // Exibe a comparação "menor que".
-echo $maiorigual . "\n"; // Exibe a comparação "maior ou igual a".
-echo $menorigual; // Exibe a comparação "menor ou igual a".
+echo "Operações de comparação" . "\n"; //Exibe o título.
+echo "Igualdade: $igual" . "\n"; // Exibe a igualdade.
+echo "Diferença: $diferente" . "\n"; // Exibe a diferença.
+echo "Maior que: $maior" . "\n"; // Exibe a comparação "maior que".
+echo "Menor que: $menor" . "\n"; // Exibe a comparação "menor que".
+echo "Maior ou igual a: $maiorigual" . "\n"; // Exibe a comparação "maior ou igual a".
+echo "Menor ou igual a: $menorigual" . "\n"; // Exibe a comparação "menor ou igual a".
+
+echo PHP_EOL;
 
 // Operações lógicas.
 $e = true && true; // E lógico.
@@ -39,9 +46,12 @@ $ou = true || false; // Ou lógico.
 $nao = !true; // Negação lógica.
 
 // Exibe os resultados.
-echo $e . "\n"; // Exibe o "E" lógico.
-echo $ou . "\n"; // Exibe o "OU" lógico.
-echo $nao; // Exibe a negação lógica.
+echo "Operações lógicas" . "\n"; //Exibe o título.
+echo "'E' lógico: $e" . "\n"; // Exibe o "E" lógico.
+echo "'OU' lógico: $ou" . "\n"; // Exibe o "OU" lógico.
+echo "Negação lógica: $nao" . "\n"; // Exibe a negação lógica.
+
+echo PHP_EOL;
 
 // Operações de incremento e decremento.
 $incremento = 2; // Define o valor inicial.
@@ -50,24 +60,29 @@ $decremento = 2; // Define o valor inicial.
 $decremento--; // Decrementa em 1.
 
 // Exibe os resultados.
-echo $incremento . "\n"; // Exibe o incremento.
-echo $decremento; // Exibe o decremento.
+echo "Operações de incremento e decremento" . "\n"; //Exibe o título.
+echo "Incremento: $incremento" . "\n"; // Exibe o incremento.
+echo "Decremento: $decremento" . "\n"; // Exibe o decremento.
 
-// Operações de concatenação.
-$texto = "Olá"; // Define o texto inicial.
-$texto .= " Mundo!"; // Concatena com outro texto.
-
-// Exibe o resultado.
-echo $texto; // Exibe o texto concatenado.
+echo PHP_EOL;
 
 // Operações de comparação de tipos.
 $inteiro = 2; // Define um número inteiro.
 $texto = "2"; // Define um texto.
 
 // Exibe os resultados.
+echo "Operações de comparação de tipos" . "\n"; //Exibe o título.
 echo $inteiro == $texto . "\n"; // Exibe a comparação de valores.
-echo $inteiro === $texto; // Exibe a comparação de tipos.
+echo $inteiro === $texto . "\n"; // Exibe a comparação de tipos.
 
+echo PHP_EOL;
+
+// Operações de concatenação.
+$texto = "Olá"; // Define o texto inicial.
+$texto .= " Mundo!"; // Concatena com outro texto.
+
+// Exibe o resultado.
+echo "Exibe concatenação de texto: $texto"; // Exibe o texto concatenado.
 
 /*
 

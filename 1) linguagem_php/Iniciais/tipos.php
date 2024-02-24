@@ -4,13 +4,10 @@
 $idade = 21.00;
 // Define uma variável com um valor inteiro
 $salario = 1000;
-
 // Realiza uma divisão que resulta em um valor de ponto flutuante
 $divisao = 10 / 3;
-
 // Define uma variável com uma string
 $texto = "Olá Mundo";
-
 // Define variáveis booleanas
 $verdadeiro = true;
 $falso = false;

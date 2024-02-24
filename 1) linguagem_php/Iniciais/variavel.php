@@ -1,7 +1,7 @@
 <?php
 
 // Define uma variável com um valor inteiro
-$idade = 34; // Define a idade.
+$idade = 34;
 
 // Exibe a idade.
 echo $idade;
