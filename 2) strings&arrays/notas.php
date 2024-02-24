@@ -47,10 +47,10 @@ in_array = função que verifica se um valor existe em um array.
 array_search = função que procura por um valor em um array e retorna a chave correspondente.
 
 Explicações do código:
-O código acima é um exemplo que demonstra o uso de funções para manipulação de arrays associativos.
-Ele ilustra a ordenação de um array associativo pelas chaves em ordem decrescente, bem como a verificação de
-diversas condições sobre o array, como se ele é um array, se é uma lista, se uma chave existe, se um valor existe
-e a busca por um valor no array.
+O código acima é um exemplo que demonstra o uso de funções para manipular arrays associativos.
+Ele ordena um array associativo de notas de alunos em ordem decrescente pelo nome do aluno e
+exibe o array após a ordenação. Em seguida, ele verifica se o array é um array e se é uma lista,
+se a aluna Ana fez a prova, se alguém tirou 10 e quem tirou 10.
 
 */
 ?>

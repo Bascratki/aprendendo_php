@@ -47,9 +47,9 @@ usort = função que ordena um array usando uma função de comparação definid
 var_dump = função que exibe informações sobre uma variável.
 
 Explicações do código:
-O código acima é um exemplo que demonstra o uso de uma função de comparação para ordenar um array multidimensional.
-Ele ilustra a definição de uma função de comparação para ordenar um array multidimensional de acordo com um critério
-específico, bem como a ordenação do array usando a função de comparação definida.
+O código acima é um exemplo que demonstra o uso de funções para manipular arrays multidimensionais.
+Ele define um array multidimensional de alunos e suas notas, e uma função para comparar as notas.
+Em seguida, ele ordena o array de notas em ordem decrescente usando a função de comparação e exibe o array após a ordenação.
 
 */
 ?>

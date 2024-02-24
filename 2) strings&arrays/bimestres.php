@@ -41,8 +41,11 @@ array_combine = função que cria um novo array usando um array para as chaves e
 array_flip = função que troca todas as chaves de um array com seus valores correspondentes.
 
 Explicações do código:
-O código acima é um exemplo que demonstra o uso de funções para manipulação de arrays em PHP.
-Ele ilustra o uso das funções array_diff_key, array_keys, array_values, array_combine e array_flip para identificar e manipular os alunos faltantes no segundo bimestre, bem como suas respectivas notas.
+O código acima é um exemplo que demonstra o uso de funções para manipular arrays associativos.
+Ele compara dois arrays de notas de alunos em diferentes bimestres e identifica os alunos que
+estiveram presentes no primeiro bimestre, mas ausentes no segundo. Em seguida, ele obtém os nomes
+e notas desses alunos e os combina em um novo array, invertendo a associação usual de nome => nota.
+Por fim, ele inverte o array de alunos faltantes para ter as notas como chaves e os nomes como valores.
 
 */
 ?>

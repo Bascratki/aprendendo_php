@@ -26,9 +26,9 @@ count = função que retorna a quantidade de elementos em um array.
 PHP_EOL = constante que representa a quebra de linha.
 
 Explicações do código:
-O código acima é um exemplo que demonstra o uso de um laço de repetição 'foreach' para percorrer um array associativo.
-Ele ilustra o uso de um laço de repetição para exibir a chave e o valor de cada elemento do array, bem como a obtenção da
-quantidade total de elementos no array.
+O código acima é um exemplo que demonstra o uso de um laço de repetição para percorrer
+um array associativo e exibir seus elementos. Ele também ilustra o uso da função count
+para obter a quantidade total de elementos em um array.
 
 */
 ?>
