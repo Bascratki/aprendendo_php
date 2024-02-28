@@ -8,4 +8,6 @@ $segundaConta = new Conta('698.549.548-10', 'Ana Paula');
 print_r($primeiraConta);
 print_r($segundaConta);
 
-echo Conta::recuperaNumContas();  
+unset($segundaConta);
+
+echo Conta::recuperaNumContas();
