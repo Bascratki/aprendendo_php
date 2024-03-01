@@ -5,7 +5,7 @@ namespace Alura\Banco\Modelo\Conta;
 class Conta
 {
     private Titular $titular;
-    private float $saldo = 0;
+    private float $saldo;
     private static int $numContas = 0;
 
     public function __construct(Titular $titular)
