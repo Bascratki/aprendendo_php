@@ -7,11 +7,13 @@ class Conta
     private Titular $titular;
     private float $saldo;
     private static int $numContas = 0;
+    private int $tipo;  // 1 = corrente, 2 = poupança
 
-    public function __construct(Titular $titular)
+    public function __construct(Titular $titular, int $tipo)
     {
         $this->titular = $titular;
         $this->saldo = 0;
+        $this->tipo = $tipo;
 
         self::$numContas++;
     }
@@ -21,17 +23,23 @@ class Conta
         self::$numContas--;
     }
 
-    public function sacar(float $valorSacar): void
+    public function saca(float $valorSacar): void
     {
-        if ($valorSacar > $this->saldo) {
+        if ($this->tipo === 1) {
+            $tarifaSaque = $valorSacar * 0.05;
+        } else {
+            $tarifaSaque = $valorSacar * 0.03;
+        }
+        $valorSaque = $valorSacar + $tarifaSaque;
+        if ($valorSaque > $this->saldo) {
             echo "Saldo indisponível";
             return;
         }
 
-        $this->saldo -= $valorSacar;
+        $this->saldo -= $valorSaque;
     }
 
-    public function depositar(float $valorDepositar): void
+    public function deposita(float $valorDepositar): void
     {
         if ($valorDepositar < 0) {
             echo "Valor inválido";
@@ -41,15 +49,15 @@ class Conta
         $this->saldo += $valorDepositar;
     }
 
-    public function transferir(float $valorTransferir, Conta $contaDestino): void
+    public function transfere(float $valorTransferir, Conta $contaDestino): void
     {
         if ($valorTransferir > $this->saldo) {
             echo "Saldo indisponível";
             return;
         }
             
-        $this->sacar($valorTransferir);
-        $contaDestino->depositar($valorTransferir);
+        $this->saca($valorTransferir);
+        $contaDestino->deposita($valorTransferir);
     }
 
     public function recuperaSaldo(): float
