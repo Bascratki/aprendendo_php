@@ -10,7 +10,7 @@ require_once 'autoload.php';
 
 
 $conta = new Conta(
-    new TItular(
+    new Titular(
         new CPF('123.456.789-10'),
         'Vinicius Dias', 
         new Endereco('Petrópolis', 'um bairro', 'minha rua', '71')

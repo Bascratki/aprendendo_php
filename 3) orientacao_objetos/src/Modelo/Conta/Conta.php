@@ -23,7 +23,7 @@ class Conta
 
     public function saca(float $valorSacar): void
     {
-        $tarifaSaque = $valorSacar * 0.05;
+        $tarifaSaque = $valorSacar * $this->tarifa();
         $valorSaque = $valorSacar + $tarifaSaque;
         if ($valorSaque > $this->saldo) {
             echo "Saldo indisponível";
@@ -72,5 +72,10 @@ class Conta
     public static function recuperaNumContas(): int
     {
         return self::$numContas;
+    }
+
+    protected function tarifa(): float
+    {
+        return 0.05;
     }
 }
