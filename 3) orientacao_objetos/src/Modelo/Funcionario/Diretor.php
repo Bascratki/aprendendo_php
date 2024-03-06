@@ -1,6 +1,7 @@
 <?php
 
 namespace Alura\Banco\Modelo\Funcionario;
+
 class Diretor extends Funcionario
 {
     public function calculaBonificacao(): float
@@ -8,7 +9,7 @@ class Diretor extends Funcionario
         return $this->recuperaSalario() * 2;
     }
 
-    public function Auth(string $senha): bool
+    public function autenticador(string $senha): bool
     {
         return $senha === '1234';
     }
