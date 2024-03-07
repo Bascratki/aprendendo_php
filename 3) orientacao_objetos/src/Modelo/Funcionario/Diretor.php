@@ -9,7 +9,7 @@ class Diretor extends Funcionario
         return $this->recuperaSalario() * 2;
     }
 
-    public function autenticador(string $senha): bool
+    public function podeAutenticar(string $senha): bool
     {
         return $senha === '1234';
     }

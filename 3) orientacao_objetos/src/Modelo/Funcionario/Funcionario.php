@@ -2,8 +2,7 @@
 
 namespace Alura\Banco\Modelo\Funcionario;
 
-use Alura\Banco\Modelo\CPF;
-use Alura\Banco\Modelo\Pessoa;
+use Alura\Banco\Modelo\{CPF, Pessoa};
 
 abstract class Funcionario extends Pessoa
 {
@@ -35,4 +34,6 @@ abstract class Funcionario extends Pessoa
     {
         return $this->salario;
     }
+
+    abstract public function calculaBonificacao(): float;
 }
