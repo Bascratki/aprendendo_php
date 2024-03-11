@@ -48,7 +48,6 @@ mb_strtoupper = Converte uma string para maiúsculas.
 explode = Divide uma string em strings.
 
 Explicação do código:
-
 Neste código, estamos utilizando funções para manipular strings.
 Primeiramente, utilizamos a função mb_strlen para exibir o comprimento
 da senha, que é uma string multibyte. Em seguida, verificamos se a
