@@ -1,16 +1,19 @@
 <?php
 
+use Alura\Banco\Modelo\Conta\Titular;
 use Alura\Banco\Modelo\CPF;
+use Alura\Banco\Modelo\Endereco;
 use Alura\Banco\Modelo\Funcionario\Diretor;
+use Alura\Banco\Modelo\Funcionario\Gerente;
 use Alura\Banco\Servico\Autenticador;
 
 require_once 'autoload.php';
 
 $autenticador = new Autenticador();
-$umDiretor = new Diretor(
-    'João da Silva',
+$umDiretor = new Titular(
     new CPF('123.456.789-10'),
-    10000
+    'João da Silva',
+    new Endereco('', '', '', '', '')
 );
 
-$autenticador->tentaLogin($umDiretor, '1234');
+$autenticador->tentaLogin($umDiretor, 'abcd');

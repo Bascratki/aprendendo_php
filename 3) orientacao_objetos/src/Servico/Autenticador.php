@@ -2,6 +2,8 @@
 
 namespace Alura\Banco\Servico;
 
+use Alura\Banco\Modelo\Autenticavel;
+
 class Autenticador
 {
     public function tentaLogin(Autenticavel $autenticavel, string $senha): void

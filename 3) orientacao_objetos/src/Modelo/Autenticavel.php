@@ -2,7 +2,7 @@
 
 namespace Alura\Banco\Modelo;
 
-abstract class Autenticavel
+interface Autenticavel
 {
-
+    public function podeAutenticar(string $senha): bool;
 }
