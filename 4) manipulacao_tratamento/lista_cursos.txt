@@ -1,10 +1,11 @@
-1. Web Development
-2. Data Science
-3. Artificial Intelligence
-4. Machine Learning
-5. Cyber Security
-6. Cloud Computing
-7. DevOps
-8. Full Stack Development
-9. Mobile App Development
-10. Game Development
+Symfony Parte 1: Criação de uma API Restful
+Symfony Parte 2: Autenticação e HATEOAS
+PHP Doctrine: Introdução ao Mapeamento Objeto-Relacional
+Laravel parte 1: Produtividade no desenvolvimento web
+Laravel parte 2: Trabalhando com Autenticação, Relacionamentos e Testes
+Lumen: API Rest com o Micro-framework do Laravel
+Introdução ao PHP: Primeiros passos com a linguagem
+Avançando com PHP: Arrays, Strings, Função e Web
+MVC com PHP: Entenda o padrão Model-View-Controller
+PHP Composer: Dependências, Autoload e Publicação
+PHP e TDD : Testes com PHPUnit
