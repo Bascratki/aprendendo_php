@@ -1,0 +1,10 @@
+1. Web Development
+2. Data Science
+3. Artificial Intelligence
+4. Machine Learning
+5. Cyber Security
+6. Cloud Computing
+7. DevOps
+8. Full Stack Development
+9. Mobile App Development
+10. Game Development
