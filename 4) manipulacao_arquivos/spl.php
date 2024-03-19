@@ -7,3 +7,8 @@ while (!$arquivoCursos->eof()) {
 
     echo $linha[0] . PHP_EOL;
 }
+
+$date = new DateTime();
+$date->setTimestamp($arquivoCursos->getCTime());
+
+echo $date->format('d/m/Y H:i:s') . PHP_EOL;
