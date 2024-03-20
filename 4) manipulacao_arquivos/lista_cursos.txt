@@ -8,4 +8,4 @@ Introdução ao PHP: Primeiros passos com a linguagem
 Avançando com PHP: Arrays, Strings, Função e Web
 MVC com PHP: Entenda o padrão Model-View-Controller
 PHP Composer: Dependências, Autoload e Publicação
-PHP e TDD : Testes com PHPUnit
+PHP e TDD : Testes com PHP Unit

@@ -1,19 +1,17 @@
 <?php
 
 $meusCursos = file('lista_cursos.txt');
-$outroscursos = file('cursos_php.txt');
+$outrosCursos = file('cursos_php.txt');
 
 $arquivoCSV = fopen('cursos.csv', 'w');
 
 foreach ($meusCursos as $curso) {
-    $linha = [trim($curso), 'Sim'];
-
+    $linha = [trim(utf8_decode($curso)), 'Sim'];
     fputcsv($arquivoCSV, $linha, ';');
 }
 
-foreach ($meusCursos as $curso) {
-    $linhas = [trim($curso), 'Não'];
-
+foreach ($outrosCursos as $curso) {
+    $linha = [trim(utf8_decode($curso)), 'Não'];
     fputcsv($arquivoCSV, $linha, ';');
 }
 
