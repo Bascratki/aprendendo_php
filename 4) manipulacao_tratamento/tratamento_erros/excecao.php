@@ -5,8 +5,10 @@
  */
 function lancaExcecao()
 {
+    
 }
 
-function outraFun
-
-lancaExcecao();
+function outraFunçao()
+{
+    lancaExcecao();
+}
