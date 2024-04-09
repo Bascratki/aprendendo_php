@@ -1,16 +1,16 @@
 function MyApp({ Component, pageProps }) {
-	return (
-		<>
-			<style>
-				{`
+  return (
+    <>
+      <style>
+        {`
 					* {
 						font-family: sans-serif;
 					}
 				`}
-			</style>
-			<Component {...pageProps} />
-		</>
-	)
+      </style>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
