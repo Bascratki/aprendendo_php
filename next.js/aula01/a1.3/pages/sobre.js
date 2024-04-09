@@ -1,15 +1,5 @@
 function SobrePage() {
-  return (
-    <div>
-      Você está na página sobre
-
-      <ul>
-        <li>
-          <a href="/">Ir para a Home</a>
-        </li>
-      </ul>
-    </div>
-  )
+	return <div>Você está na página Sobre</div>
 }
 
-export default SobrePage;
+export default SobrePage
