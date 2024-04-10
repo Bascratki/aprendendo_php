@@ -5,16 +5,11 @@ import dados from '../../dados.json';
 
 // dica dos paths estáticos
 export async function getStaticPaths() {
-  // const paths = [
-  //   { params: { id: '1' } },
-  //   { params: { id: '2' } },
-  //   { params: { id: '3' } }
-  // ]
-  const paths = dados.posts.map((postAtual) => {
-    return { params: { id: `${postAtual.id}` } };
-  })
-  console.log('dados:', dados);
-  console.log('paths:', paths);
+  const paths = [
+    { params: { id: '1' } },
+    { params: { id: '2' } },
+    { params: { id: '3' } }
+  ]
 
   return {
     paths: paths,
@@ -23,25 +18,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(context) {
-  console.log('Contexto', context.params.id);
-  const id = context.params.id;
-
-  const post = dados.posts.find((currentPost) => {
-    if(currentPost.id === id) {
-      return true;
-    }
-    return false;
-  })
-
-  console.log(post);
-
+  console.log('Contexto:', context.params.id);
   return {
     props: {
-      id: post.id,
-      title: post.title,
-      date: post.date,
-      content: post.content,
-    }, 
+      id: context.params.id, 
+      title: 'Post: [${context.params.id}]',
+      date: '10/04/2024',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+
+    }, // will be passed to the page component as props
   }
 }
 

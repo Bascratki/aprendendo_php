@@ -1,6 +1,10 @@
 import NextLink from "next/link";
 import { Box, Text, Image } from "@skynexui/components";
+import { useRouter } from "next/router";
 import dados from "../dados.json";
+
+// dica dos paths estáticos
+
 
 export default function HomeScreen() {
   const infos = {
