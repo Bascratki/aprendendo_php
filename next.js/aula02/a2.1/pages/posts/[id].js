@@ -6,11 +6,16 @@ import dados from "../../dados.json";
 // dica dos paths estáticos
 
 export async function getStaticPaths() {
-  const paths = [
-    { params: { id: "1" } },
-    { params: { id: "2" } },
-    { params: { id: "3" } },
-  ];
+  // const paths = [
+  //   { params: { id: "1" } },
+  //   { params: { id: "2" } },
+  //   { params: { id: "3" } },
+  // ];
+  const paths = dados.posts.map((postAtual) => {
+    return { params: { id: `${postAtual.id}` } };
+  });
+  console.log("dados:", dados);
+  console.log("paths:", paths);
 
   return {
     paths: paths,
@@ -22,11 +27,8 @@ export async function getStaticProps(context) {
   console.log("Contexto:", context.params.id);
   const id = context.params.id;
 
-  const post = dados.params.find((currentPost) => {
-    if (currentPost.id === id) {
-      return true;
-    }
-    return false;
+  const post = dados.posts.find((currentPost) => {
+    return currentPost.id.toString() === id;
   });
 
   console.log(post);
