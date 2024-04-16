@@ -4,10 +4,6 @@ import { useRouter } from "next/router";
 import nookies from "nookies";
 
 export default function HomeScreen() {
-  nookies.set(null, "SENHA_SECRETA", "123456", {
-    maxAge: 30 * 24 * 60 * 60,
-    path: "/",
-  });
   const [senha, setSenha] = React.useState("123456");
   const router = useRouter();
   console.log("HomeScreen", router);

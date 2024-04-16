@@ -6,7 +6,7 @@ export async function getServerSideProps(context) {
   const cookies = nookies.get(context);
   console.log('Cookies', cookies) 
   const SENHA_SECRETA = '123456';
-  const senhaInformadaPeloUsuario = nookies.get(context).SENHA_SECRETA;
+  const senhaInformadaPeloUsuario = cookies.SENHA_SECRETA;
   const isAutorizado = SENHA_SECRETA === senhaInformadaPeloUsuario;
 
   if (!isAutorizado) {
@@ -48,8 +48,8 @@ export default function LoggedScreen() {
       <Button
         label="Logout"
         onClick={() => {
-          router.push("/");
           nookies.destroy(null, "SENHA_SECRETA");
+          router.push("/");
         }}
         colorVariant="neutral"
         variant="secondary"
