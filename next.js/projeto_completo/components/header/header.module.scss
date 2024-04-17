@@ -1,6 +1,7 @@
 @import '/styles/mixins/colors.scss';
 
 .container {
+	color: $white-color;
 	padding: 34px 70px;
 	width: auto;
 	background-color: $purple-color;
