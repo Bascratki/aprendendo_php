@@ -1,10 +1,12 @@
-import Header from '@/components/header'
-import styles from './Home.module.scss'
+import Header from '../components/Header'
+import Welcome from '../components/Welcome'
+import Styles from '../pages/Home.module.scss'
 
 export default function Home() {
 	return (
-		<div className={styles.container}>
+		<div className={Styles.container}>
 			<Header />
+			<Welcome />
 		</div>
 	)
 }
