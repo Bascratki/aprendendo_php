@@ -2,7 +2,7 @@ import Styles from './button.module.scss'
 
 /**
  * Props
- * title: string
+ * title: stringzz
  * kind: "primary" | "secondary"
  */
 
