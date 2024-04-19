@@ -1,0 +1,21 @@
+@import '../../styles/mixins/colors.scss';
+
+.container {
+	h1 {
+		font-size: 65px;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 30px;
+		opacity: 0.7;
+		color: $purple2-color;
+	}
+}
+
+.feature {
+	h1 {
+		font-weight: bold;
+		font-size: 41px;
+	}
+}
