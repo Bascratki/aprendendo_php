@@ -1,5 +1,5 @@
-@import '/src/styles/mixins/colors.scss';
-@import '/src/styles/mixins/padding.scss';
+@import '/styles/mixins/colors.scss';
+@import '/styles/mixins/padding.scss';
 
 .container {
 	@include Padding; //Mixin
@@ -13,15 +13,6 @@
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
 	justify-content: space-between;
-
-	@include Phone {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-	}
-
-	@include Tablet {
-		grid-template-columns: repeat(2, 1fr);
-	}
 }
 
 .menu {
@@ -30,20 +21,8 @@
 	a + a {
 		margin-left: 38.9px;
 	}
-
-	@include Phone {
-		display: none;
-	}
 }
 
 .action {
 	text-align: end;
-
-	@include Phone {
-		display: none;
-	}
-
-	@include Tablet {
-		display: none;
-	}
 }
