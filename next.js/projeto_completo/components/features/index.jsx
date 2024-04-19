@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Styles from './features.module.scss'
-import Icon from '/public/images/icon.svg'
+import Icon from '/public/images/iconDigital.svg'
 
 const Features = () => {
 	return (
@@ -10,12 +10,12 @@ const Features = () => {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.
 			</p>
-
 			<div className={Styles.features}>
 				<div className={Styles.feature}>
 					<Image
 						src={Icon}
 						alt='Icon'
+						className={Styles.icon}
 					/>
 					<h1>Digital Strategy</h1>
 					<p>
@@ -27,6 +27,7 @@ const Features = () => {
 					<Image
 						src={Icon}
 						alt='Icon'
+						className={Styles.icon}
 					/>
 					<h1>Digital Strategy</h1>
 					<p>
@@ -38,6 +39,7 @@ const Features = () => {
 					<Image
 						src={Icon}
 						alt='Icon'
+						className={Styles.icon}
 					/>
 					<h1>Digital Strategy</h1>
 					<p>
@@ -49,6 +51,7 @@ const Features = () => {
 					<Image
 						src={Icon}
 						alt='Icon'
+						className={Styles.icon}
 					/>
 					<h1>Digital Strategy</h1>
 					<p>
