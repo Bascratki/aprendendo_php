@@ -14,7 +14,7 @@ const Header = () => {
 				/>
 			</div>
 			<div className={Styles.menu}>
-				<Link href='/</div>'>Home</Link>
+				<Link href='/>'>Home</Link>
 				<Link href='/'>O que fazemos</Link>
 				<Link href='/'>Cases</Link>
 			</div>

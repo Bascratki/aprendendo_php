@@ -15,7 +15,6 @@ const Welcome = () => {
 				<Button
 					title='Aumentar vendas'
 					kind='secundary'
-					onClick={() => ScrollTo('contato')}
 				/>
 			</div>
 			<div className={Styles.image}>
