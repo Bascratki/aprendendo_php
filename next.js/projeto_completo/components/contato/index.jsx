@@ -15,32 +15,41 @@ const Contato = () => {
 			<div className={Styles.forms}>
 				<h1>Fale com um especialista</h1>
 
-				<input
-					type='text'
-					placeholder='Nome completo'
-				></input>
+				<form>
+					<input
+						type='text'
+						placeholder='Nome completo'
+						required
+					></input>
+					<input
+						type='email'
+						placeholder='Email profissional'
+						pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}'
+						required
+					></input>
+					<input
+						type='text'
+						placeholder='Ex: (11) 99999-9999'
+						pattern='^\(\d{2}\) \d{5}-\d{4}$'
+						required
+					></input>
+					<input
+						type='text'
+						placeholder='Site'
+						required
+					></input>
+					<select
+						name='select'
+						id='select'
+						required
+					>
+						<option value=''>Selecione uma opção</option>
+						<option value='1'>Instagram</option>
+						<option value='2'>Facebook</option>
+					</select>
 
-				<input
-					type='email'
-					placeholder='Email profissional'
-				></input>
-
-				<input
-					type='text'
-					placeholder='Celular/WhatsaApp'
-				></input>
-
-				<input
-					type='text'
-					placeholder='Site'
-				></input>
-
-				<input
-					type='select'
-					placeholder='Orçamento para mídia'
-				></input>
-
-				<Button title='Enviar ' />
+					<Button title='Enviar ' />
+				</form>
 			</div>
 		</div>
 	)

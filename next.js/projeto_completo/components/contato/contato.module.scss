@@ -7,6 +7,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	align-items: flex-start;
 	justify-content: space-between;
+	gap: 150px;
 }
 
 .texts {
@@ -31,18 +32,17 @@
 .forms {
 	padding: 38px 31px;
 	background-color: $white-color;
-	width: 586px;
-	height: 657px;
 	border: 0.5px solid $gray3-color;
 	border-radius: 10px;
-
-	display: grid;
 
 	h1 {
 		color: $purple-color;
 		font-weight: bold;
 		font-size: 35px;
-		padding: 0px;
-		margin: 0px;
+	}
+
+	form {
+		display: flex;
+		flex-flow: column;
 	}
 }
