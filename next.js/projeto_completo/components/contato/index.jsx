@@ -1,5 +1,7 @@
-import Button from '../button/index.jsx'
 import Styles from './contato.module.scss'
+import Button from '../button'
+import Input from '../input'
+import Select from '../select'
 
 const Contato = () => {
 	return (
@@ -16,39 +18,43 @@ const Contato = () => {
 				<h1>Fale com um especialista</h1>
 
 				<form>
-					<input
+					<Input
 						type='text'
 						placeholder='Nome completo'
 						required
-					></input>
-					<input
+					></Input>
+					<Input
 						type='email'
 						placeholder='Email profissional'
 						pattern='[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}'
 						required
-					></input>
-					<input
+					></Input>
+					<Input
 						type='text'
 						placeholder='Ex: (11) 99999-9999'
 						pattern='^\(\d{2}\) \d{5}-\d{4}$'
 						required
-					></input>
-					<input
+					></Input>
+					<Input
 						type='text'
 						placeholder='Site'
 						required
-					></input>
-					<select
-						name='select'
-						id='select'
+					></Input>
+					<Select
+						placeholder='Selecione o segmento'
+						options={[
+							{ value: '1', label: 'Tecnologia' },
+							{ value: '2', label: 'Saúde' },
+							{ value: '3', label: 'Educação' },
+							{ value: '4', label: 'Varejo' }
+						]}
 						required
-					>
-						<option value=''>Selecione uma opção</option>
-						<option value='1'>Instagram</option>
-						<option value='2'>Facebook</option>
-					</select>
+					></Select>
 
-					<Button title='Enviar ' />
+					<Button
+						title='Enviar '
+						kind='full'
+					/>
 				</form>
 			</div>
 		</div>
