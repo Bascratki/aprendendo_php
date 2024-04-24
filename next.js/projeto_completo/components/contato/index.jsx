@@ -57,6 +57,12 @@ const Contato = () => {
 					/>
 				</form>
 			</div>
+			<div className={Styles.footer}>
+				<p>
+					Ao enviar esse formulário, você reconhece que leu e concordacom a{' '}
+					nossa Política de Privacidade
+				</p>
+			</div>
 		</div>
 	)
 }
