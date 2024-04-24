@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Styles from './contato.module.scss'
 import Button from '../button'
 import Input from '../input'
@@ -59,8 +60,11 @@ const Contato = () => {
 			</div>
 			<div className={Styles.footer}>
 				<p>
-					Ao enviar esse formulário, você reconhece que leu e concordacom a{' '}
-					nossa Política de Privacidade
+					Ao enviar esse formulário, você reconhece que leu e concordacom a
+					nossa
+					<Link href='http://google.com'>
+						<span> Política de Privacidade</span>
+					</Link>
 				</p>
 			</div>
 		</div>
