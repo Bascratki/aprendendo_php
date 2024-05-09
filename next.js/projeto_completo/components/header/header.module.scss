@@ -16,8 +16,12 @@
   justify-content: space-between;
 
   @include Phone {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  @include Tablet {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -37,6 +41,10 @@
   text-align: end;
 
   @include Phone {
+    display: none;
+  }
+
+  @include Tablet {
     display: none;
   }
 }

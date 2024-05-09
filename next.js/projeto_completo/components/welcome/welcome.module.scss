@@ -14,7 +14,18 @@
 
   @include Phone {
     grid-template-columns: 1fr;
-	grid-template-rows: max-content;
+    grid-template-rows: max-content;
+    padding-top: 2rem;
+  }
+
+  @include Tablet {
+    height: 100%;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+  }
+
+  @include Laptop {
+    padding-top: 6rem;
   }
 }
 
@@ -35,7 +46,7 @@
 
   @include Phone {
     text-align: center;
-	grid-column: 1;
-	grid-row: 1;
+    grid-column: 1;
+    grid-row: 1;
   }
 }
